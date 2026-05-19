@@ -1,0 +1,171 @@
+/** Dữ liệu chi tiết tour Bắc Âu — merge khi seed slug `bac-au` */
+export const BAC_AU_DETAIL = {
+  route: 'Copenhagen → Oslo → Flam → Gudvangen → Bergen → Stockholm → Helsinki',
+  overview:
+    'Hành trình **12 ngày khám phá 4 quốc gia Bắc Âu** với những trải nghiệm độc đáo không thể tìm thấy ở nơi nào khác trên thế giới. Từ vịnh fjord hùng vĩ Na Uy đến đêm cruise xa hoa trên biển Baltic.',
+  tourCode: 'TVT-NORDIC-2024',
+  airline: 'Qatar Airways 5 sao',
+  departureFrom: 'TP. Hồ Chí Minh',
+  hotelInfo: '3–4 sao, buffet sáng',
+  visaInfo: 'Schengen – hỗ trợ hồ sơ',
+  insuranceInfo: 'Quốc tế 1.500.000.000₫/người',
+  tourType: 'Ghép đoàn – Định kỳ',
+  depositNote: '50.000.000₫ khi đăng ký',
+  highlights: [
+    { icon: '🏰', title: 'Cung điện Christiansborg', description: 'Tặng vé – biểu tượng quyền lực Đan Mạch giữa lòng Copenhagen' },
+    { icon: '🚢', title: 'Du thuyền vịnh Gudvangen', description: 'Nærøyfjord – di sản UNESCO – vách đá dựng đứng hai bên' },
+    { icon: '🚂', title: 'Tàu lửa Flam Railway', description: '1 trong những tuyến đường sắt đẹp nhất thế giới' },
+    { icon: '⭐', title: 'Du thuyền 5★ Silja Line', description: '1 đêm luxury cruise Stockholm – Helsinki trên biển Baltic' },
+    { icon: '🏛️', title: 'Bảo tàng tàu Vasa', description: 'Tặng vé – kỳ quan thế kỷ 17 còn nguyên vẹn của Thuỵ Điển' },
+    { icon: '⛪', title: 'Nhà thờ Đá Helsinki', description: 'Tặng vé – công trình khắc vào đá granite độc nhất vô nhị' },
+  ],
+  itinerary: [
+    {
+      day: '1',
+      title: 'TP.HCM → COPENHAGEN (Đan Mạch)',
+      chip: '✈️ Bay đêm',
+      description:
+        'Tập trung tại sân bay Tân Sơn Nhất, làm thủ tục xuất cảnh. Lên máy bay Qatar Airways 5 sao bay đến Copenhagen – thủ đô của Đan Mạch.',
+      tags: [{ label: '🍽️ Ăn trên máy bay' }, { label: '✈️ Qatar Airways' }],
+    },
+    {
+      day: '2',
+      title: 'COPENHAGEN – Tham quan thủ đô Đan Mạch',
+      chip: '🏙️ Thành phố cổ',
+      description:
+        'Tham quan: Tượng nàng tiên cá, Cung điện Christiansborg (tặng vé), phố đi bộ Stroget, quảng trường Nytorv.',
+      tags: [{ label: '🍳 Buffet sáng' }, { label: '🍽️ Ăn trưa & tối' }, { label: '🏨 KS 4★ Copenhagen' }],
+    },
+    {
+      day: '3',
+      title: 'COPENHAGEN → GOTHENBURG (Thuỵ Điển)',
+      chip: '🌉 Cầu Øresund',
+      description: 'Vượt cầu Øresund nối Đan Mạch – Thuỵ Điển, đến Gothenburg – thành phố cảng lớn nhất Thuỵ Điển.',
+      tags: [{ label: '🍳 Buffet sáng' }, { label: '🏨 KS 4★ Gothenburg' }],
+    },
+    {
+      day: '4',
+      title: 'GOTHENBURG → OSLO (Na Uy)',
+      chip: '🇳🇴 Thủ đô Na Uy',
+      description: 'Đến Oslo, tham quan Tòa thị chính, Nhà hát Opera, Pháo đài Akershus nhìn ra vịnh Oslo fjord.',
+      tags: [{ label: '🍳 Buffet sáng' }, { label: '🏨 KS 4★ Oslo' }],
+    },
+    {
+      day: '5',
+      title: 'OSLO → FLAM → GUDVANGEN',
+      chip: '⭐ Ngày đặc sắc nhất',
+      featured: true,
+      description:
+        'Trải nghiệm tàu lửa Flam Railway và du thuyền Nærøyfjord (di sản UNESCO) – ngắm vách đá cao 1.400m từ mặt nước.',
+      tags: [
+        { label: '🚂 Flam Railway' },
+        { label: '🚢 Du thuyền Gudvangen' },
+        { label: '🌊 UNESCO Fjord' },
+        { label: '⭐ Highlight tour' },
+      ],
+    },
+    {
+      day: '6',
+      title: 'HEMSEDAL → BERGEN',
+      chip: '🏔️ Cao nguyên Alpine',
+      description: 'Băng qua cao nguyên Hemsedal. Đến Bergen – thành phố cảng cổ UNESCO, khu phố Bryggen.',
+      tags: [{ label: '🍳 Buffet sáng' }, { label: '🏘️ Bryggen UNESCO' }, { label: '🏨 KS 4★ Bergen' }],
+    },
+    {
+      day: '7',
+      title: 'BERGEN → MYRDAL → KARLSTAD',
+      chip: '🚂 Tàu leo núi',
+      description: 'Tàu lửa Bergen Railway leo núi lên Myrdal. Di chuyển qua biên giới Na Uy – Thuỵ Điển đến Karlstad.',
+      tags: [{ label: '🚂 Bergen Railway' }, { label: '🏨 KS 4★ Karlstad' }],
+    },
+    {
+      day: '8',
+      title: 'KARLSTAD → STOCKHOLM',
+      chip: '👑 Thủ đô Thuỵ Điển',
+      description: 'Đến Stockholm. Tham quan Bảo tàng tàu Vasa (tặng vé), Cung điện Hoàng gia, phố cổ Gamla Stan.',
+      tags: [{ label: '🏛️ Bảo tàng Vasa' }, { label: '🏰 Cung điện Hoàng gia' }, { label: '🏨 KS 4★ Stockholm' }],
+    },
+    {
+      day: '9',
+      title: 'STOCKHOLM → Du thuyền SILJA LINE → HELSINKI',
+      chip: '⭐ Trải nghiệm luxury',
+      featured: true,
+      description:
+        'Buổi chiều tự do mua sắm. Tối lên du thuyền 5 sao Silja Line vượt biển Baltic đến Helsinki.',
+      tags: [{ label: '⛴️ Silja Line 5★' }, { label: '🌊 Biển Baltic' }, { label: '🎭 Entertainment on board' }],
+    },
+    {
+      day: '10',
+      title: 'HELSINKI (Phần Lan) – Tham quan',
+      chip: '🇫🇮 Thủ đô Phần Lan',
+      description: 'Tham quan Nhà thờ Đá Temppeliaukio (tặng vé), Quảng trường Thượng viện, Nhà thờ Lớn Helsinki.',
+      tags: [{ label: '⛪ Nhà thờ Đá' }, { label: '🏛️ Quảng trường Thượng viện' }, { label: '🏨 KS 4★ Helsinki' }],
+    },
+    {
+      day: '11',
+      title: 'HELSINKI – Tự do – Ra sân bay',
+      chip: '🛍️ Shopping',
+      description: 'Buổi sáng tự do mua sắm. Chiều ra sân bay Helsinki làm thủ tục bay về Việt Nam qua Qatar.',
+      tags: [{ label: '🛍️ Tự do mua sắm' }, { label: '✈️ Bay đêm về VN' }],
+    },
+    {
+      day: '12',
+      title: 'VỀ TP. HỒ CHÍ MINH – Kết thúc hành trình',
+      chip: '🏠 Về nhà',
+      description:
+        'Máy bay hạ cánh tại sân bay Tân Sơn Nhất. Hành trình Bắc Âu kỳ diệu kết thúc. Hẹn gặp lại quý khách!',
+      tags: [{ label: '🎉 Kết thúc tour' }, { label: '🏠 TP. Hồ Chí Minh' }],
+    },
+  ],
+  includes: [
+    { item: 'Vé máy bay quốc tế TP.HCM ↔ Copenhagen / Helsinki (Qatar Airways 5★)' },
+    { item: 'Thuế, phụ phí xăng dầu, phí an ninh & sân bay 2 quốc gia' },
+    { item: 'Khách sạn 3–4 sao suốt tuyến, phòng đôi tiêu chuẩn' },
+    { item: 'Buffet sáng tại khách sạn hàng ngày' },
+    { item: 'Ăn trưa + tối theo chương trình' },
+    { item: 'Thư mời Schengen visa' },
+    { item: 'Hướng dẫn viên người Việt đi suốt tuyến 12 ngày' },
+    { item: 'Xe du lịch đời mới điều hòa suốt chương trình' },
+    { item: 'Vé tham quan: Cung điện Christiansborg, Bảo tàng Vasa, Nhà thờ Đá Helsinki' },
+    { item: 'Du thuyền vịnh Gudvangen (Nærøyfjord UNESCO)' },
+    { item: 'Tàu lửa Flam Railway & Bergen Railway' },
+    { item: '01 đêm du thuyền 5★ Silja Line (Stockholm – Helsinki)' },
+    { item: 'Bảo hiểm du lịch quốc tế 1.500.000.000₫/người' },
+    { item: 'Quà tặng: nón + tag hành lý Top Viet Travel' },
+  ],
+  excludes: [
+    { item: 'Hộ chiếu (cần còn hạn trên 6 tháng)' },
+    { item: 'Phí visa Schengen: 6.000.000₫' },
+    { item: 'Tips HDV & tài xế địa phương: 2.500.000₫/tour' },
+    { item: 'Chi phí cá nhân, hành lý quá cước' },
+    { item: 'Phụ phí phòng đơn: 20.000.000₫' },
+    { item: 'Đổi ngày / nâng hạng vé máy bay' },
+    { item: 'Chi phí phát sinh ngoài chương trình' },
+  ],
+  terms: JSON.stringify([
+    {
+      title: 'Đặt cọc & Đăng ký',
+      body: 'Mang Passport bản gốc + đặt cọc 50.000.000₫ khi đăng ký, ít nhất 45 ngày trước khởi hành.',
+    },
+    {
+      title: 'Thanh toán còn lại',
+      body: 'Thanh toán đủ trước khởi hành 15 ngày (tour thường) hoặc 25 ngày (tour lễ/Tết).',
+    },
+    {
+      title: 'Hồ sơ Visa Schengen',
+      body: 'Nộp hồ sơ trước khởi hành tối thiểu 5 tuần. Top Viet Travel hỗ trợ toàn bộ thủ tục.',
+    },
+    {
+      title: 'Điều kiện khởi hành',
+      body: 'Tour khởi hành khi đủ tối thiểu 10 khách. Nếu không đủ, thông báo trước 7 ngày và hoàn tiền 100%.',
+    },
+    {
+      title: 'Chính sách huỷ tour',
+      body: 'Trên 30 ngày: mất 20% · Từ 15–30 ngày: mất 50% · Dưới 15 ngày: mất 100%.',
+    },
+    {
+      title: 'Lưu ý đặc biệt',
+      body: 'Không nhận khách từ 80 tuổi trở lên. Khách 75–79 tuổi cần giấy khám sức khỏe.',
+    },
+  ]),
+}
