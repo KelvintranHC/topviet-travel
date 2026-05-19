@@ -12,7 +12,7 @@ const collections = [
   { slug: 'testimonials', label: 'Đánh giá', description: 'Phản hồi khách hàng' },
   { slug: 'pages', label: 'Trang tĩnh', description: 'Giới thiệu, liên hệ' },
 ]
-
+export const dynamic = 'force-dynamic'
 export default async function ContentPage() {
   const user = await requireAuth()
 
